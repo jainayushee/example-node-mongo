@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const blogSchema = new mongoose.Schema({
   id: {
-    type: Number,
+    type: String,
     required: true
   },
   title: {
@@ -15,4 +15,4 @@ const blogSchema = new mongoose.Schema({
   }
 })
 
-module.exports = mongoose.model('blog' ,blogSchema)
+module.exports = mongoose.model('posts' ,blogSchema)
